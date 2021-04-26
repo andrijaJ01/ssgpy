@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <header class="masthead" style="background-image: url(&quot;assets/img/0010.jpg&quot;);width: 100%;height: 100vh;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="site-heading">
+                        <h1 style="margin-top: 1em;">Andrija Jovanovic</h1><span class="subheading">Static blog generator</span><a class="btn btn-outline-light" role="button" data-bs-hover-animate="jello" style="margin-top: 2rem;" href="#content">Go down&nbsp;<i class="fas fa-caret-down"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" id="content">
+        <div class="row">
+            <div class="col-md-10 col-lg-8">
+{% for post in posts %}
+                <div class="post-preview">
+                    <a href="/posts/{{post.slug}}.html">
+                        <h2 class="post-title">{{post.title}}</h2>
+                        <h3 class="post-subtitle">{{post.summary}}</h3>
+                    </a>
+                    <p class="post-meta">Posted by&nbsp;<a href="about.html"><em>{{post.author}} on {{post.date}}</em></a></p>
+                </div>
+                <hr>
+{% endfor %}
+{% endblock %}
