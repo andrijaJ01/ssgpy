@@ -1,13 +1,15 @@
 {% extends "base.html" %}
+{% block title  %}{{post.title}}{% endblock %}
 {%block content%}
-	<header class="masthead" style="background-image: url(&quot;assets/img/0016.jpg&quot;);width: 100%;height: 100vh;">
+	<header class="masthead" style="background-image: url(&quot;{{post.headerimg}}&quot;);width: 100%;height: 100vh;">
         <div class="overlay"><a href="http://github.com/fer"></a></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto">
                     <div class="post-heading">
                         <h1>{{post.title}}</h1>
-                        <h2 class="subheading">{{post.subtitle}}</h2><span class="meta" style="font-family: Alike, serif;filter: brightness(124%) contrast(200%);font-size: 19px;">Posted by&nbsp;<a href="about.html">{{post.author}}</a>&nbsp;on {{post.date}}</span></div>
+                        <h2 class="subheading">{{post.subtitle}}</h2>
+			<span class="meta" style="font-family: Alike, serif;filter: brightness(124%) contrast(200%);font-size: 19px;">Posted by&nbsp;<a href="/about.html">{{post.author}}</a>&nbsp;on {{post.date}}</span></div>
                 </div>
             </div>
         </div>
@@ -16,6 +18,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto">
+		
+                <h2 class="subheading">{{post.summary}}</h2>
 		{{ post.content }}
                 </div>
             </div>

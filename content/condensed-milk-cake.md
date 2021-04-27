@@ -1,21 +1,23 @@
 ---
-title: Sweetened Condensed Milk Cake
-subtitle: test
+title: Torta od zasladjenog mleka
+subtitle: slatka kao dusa
 date: 2019-04-15
 slug: condensed-milk-cake
-author:Andrija Jovanovic
+author:Danijela Jovanovic
+summary: Najsladja torta koju ste ikada probalo
+headerimg:assets/img/0088.jpg
 ---
 
-__Ingredients__
+__Sastojci:__
 
-+ 1 can (395g) sweetened condensed milk
-+ 4 eggs
-+ 120gm all purpose flour
++ 1 can (395g) Slatkog kondenzovanog mleka
++ 4 jaja
++ 120gm brasna
 + 1/2 tblsp baking powder
-+ 50gm unsalted butter, melted and cooled
-+ Icing sugar for dusting
++ 50gm  margarina, topljen pa ohladjen
++ Secer u prahu
 
-__Preparation__
+__Priprema:__
 
 Preheat oven to 180C. Generously butter a 22cm ring cake pan.
  

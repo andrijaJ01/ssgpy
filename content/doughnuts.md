@@ -7,6 +7,7 @@ thumbnail: img/doughnuts.jpg
 summary: Old fashioned sugar dusted doughnuts. Better than any store bought doughnuts.
 slug: doughnuts
 author:Andrija Jovanovic
+headerimg:assets/img/0131.jpg
 ---
 
 __Ingredients__
