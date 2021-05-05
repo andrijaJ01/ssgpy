@@ -40,7 +40,7 @@ for post in POSTS:
 
     post_html = post_template.render(post=post_data)
     post_file_path = 'output/posts/{slug}.html'.format(slug=post_metadata['slug'])
-
+    print(f"Written: {post_file_path}")
     os.makedirs(os.path.dirname(post_file_path), exist_ok=True)
     with open(post_file_path, 'w') as file:
         file.write(post_html)
