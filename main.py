@@ -50,6 +50,7 @@ for post in POSTS:
         'subtitle': post_metadata['subtitle'],
         'author':post_metadata['author'],
         'date': post_metadata['date'],
+        'img':post_metadata['img']
     }
 
     post_html = post_template.render(post=post_data)

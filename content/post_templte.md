@@ -4,6 +4,7 @@ subtitle: This is post subtitile
 author: Who wrote the post
 date: 2020-04-26
 slug: post-slug
+img:
 ---
 
 __How to write post template for blog__
