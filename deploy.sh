@@ -1,14 +1,14 @@
 #!/bin/bash
-outdir="~/websites/bloggy/" 
+outdir="~/websites/bloggy" 
 branch="updates"
-comm="making some changes to $outdir"
-cur_dir= $(pwd)
+comm="changes to blog"
 
-cp -rv output/* $outdir
-echo "Moved files to $outdir"
-cd $outdir
+mkdir /home/andrija/websites/bloggy
+cp -rv output/* /home/andrija/websites/bloggy
+cd /home/andrija/websites/bloggy
 git branch $branch
 git add .
 git commit -m "$comm"
+git push
 gh pr create
-cd $cur_dir
+
