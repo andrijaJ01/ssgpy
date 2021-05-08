@@ -21,12 +21,25 @@ POSTS = {
 env = Environment(loader=PackageLoader('main', 'templates'))
 home_template = env.get_template('index.html')
 post_template = env.get_template('post.html')
+about_template = env.get_template('about.html')
+contact_template = env.get_template('contact.html')
+
 
 posts_metadata = [POSTS[post].metadata for post in POSTS]
 home_html = home_template.render(posts=posts_metadata)
+about_html = about_template.render()
+contact_html = contact_template.render()
+
 
 with open('output/index.html', 'w') as file:
     file.write(home_html)
+
+with open('output/about.html', 'w') as file:
+    file.write(about_html)
+
+with open('output/contact.html', 'w') as file:
+    file.write(contact_html)
+
 
 for post in POSTS:
     post_metadata = POSTS[post].metadata
@@ -37,7 +50,6 @@ for post in POSTS:
         'subtitle': post_metadata['subtitle'],
         'author':post_metadata['author'],
         'date': post_metadata['date'],
-        'slug': post_metadata['slug'],
     }
 
     post_html = post_template.render(post=post_data)

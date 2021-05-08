@@ -6,21 +6,12 @@
                         <a class="nav-link" href="/">Home</a>
                     </li>
                     
-                    <li class="nav-item dropdown">
-                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Posts&nbsp;</a>
-                        <div class="dropdown-menu" role="menu">
-                            {% for post in posts %}
-                                <a class="dropdown-item" role="presentation" href="/posts/{{post.slug}}.html">{{post.title}}</a>
-                            {% endfor %}
-                            </div>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="/about.html">About</a>
                     </li>
                     
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="/contact.html">Contact</a>
                     </li>
                 </ul>
         </div>
