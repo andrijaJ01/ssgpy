@@ -1,6 +1,6 @@
 ---
 title: This is post title
-subtitle:This is post subtitile
+subtitle: This is post subtitile
 author: Who wrote the post
 date: 2020-04-26
 slug: post-slug

@@ -4,7 +4,7 @@ subtitle: to roll in the taste
 date: 2020-04-11
 summary: Soft and fluffy dinner rolls. Great as a side or in breakfast with coffee.
 slug: lionhouse-rolls
-author:Andrija Jovanovic
+author: Andrija Jovanovic
 ---
 
 __Ingredients__

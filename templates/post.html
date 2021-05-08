@@ -9,10 +9,16 @@
                         <h1>{{post.title}}</h1>
                         <h2 class="subheading">{{post.subtitle}}</h2><span class="meta" style="font-family: Alike, serif;filter: brightness(124%) contrast(200%);font-size: 19px;">Posted by&nbsp;<a href="about.html">{{post.author}}</a>&nbsp;on {{post.date}}</span></div>
                 </div>
+<div class="dropdown-menu" role="menu">
+                            {% for post in posts %}
+                                <a class="dropdown-item" role="presentation" href="/posts/{{post.slug}}.html">{{post.title}}</a>
+                            {% endfor %}
+                            </div>
             </div>
         </div>
     </header>
     <article>
+    
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto">

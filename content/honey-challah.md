@@ -6,7 +6,7 @@ tags: Bread, Sweet
 thumbnail: img/challah.jpg
 summary: A soft and sweet traditional bread infused with honey flavour. 
 slug: honey-challah
-author:Andrija Jovanovic
+author: Andrija Jovanovic
 ---
 
 __Ingredients__

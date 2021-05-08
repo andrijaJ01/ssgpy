@@ -3,7 +3,7 @@ title: Sweetened Condensed Milk Cake
 subtitle: test
 date: 2019-04-15
 slug: condensed-milk-cake
-author:Andrija Jovanovic
+author: Andrija Jovanovic
 ---
 
 __Ingredients__

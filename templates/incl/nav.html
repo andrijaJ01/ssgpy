@@ -1,0 +1,28 @@
+<nav class="navbar navbar-light navbar-expand-lg fixed-top" data-aos="fade-down" data-aos-duration="50" data-aos-delay="200" id="mainNav">
+        <div class="container-fluid"><a class="navbar-brand" href="/">ANDRIJA</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Posts&nbsp;</a>
+                        <div class="dropdown-menu" role="menu">
+                            {% for post in posts %}
+                                <a class="dropdown-item" role="presentation" href="/posts/{{post.slug}}.html">{{post.title}}</a>
+                            {% endfor %}
+                            </div>
+                    </li>
+                    
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+        </div>
+        </div>
+    </nav>

@@ -35,7 +35,9 @@ for post in POSTS:
         'content': POSTS[post],
         'title': post_metadata['title'],
         'subtitle': post_metadata['subtitle'],
-        'date': post_metadata['date']
+        'author':post_metadata['author'],
+        'date': post_metadata['date'],
+        'slug': post_metadata['slug'],
     }
 
     post_html = post_template.render(post=post_data)
@@ -44,4 +46,3 @@ for post in POSTS:
     os.makedirs(os.path.dirname(post_file_path), exist_ok=True)
     with open(post_file_path, 'w') as file:
         file.write(post_html)
-

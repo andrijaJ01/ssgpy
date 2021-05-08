@@ -6,7 +6,7 @@ tags: Bread
 thumbnail: img/naan.jpg
 summary: Soft and fluffy home made naan bread which doesn't need you to fire up the oven. Great with curries or tear chunks and dunk in honey butter.
 slug: naan
-author:Andrija Jovanovic
+author: Andrija Jovanovic
 ---
 
 __Ingredients__

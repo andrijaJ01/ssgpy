@@ -1,6 +1,6 @@
 ---
 title: Get started With qtile
-subtitle:window manager configured in python
+subtitle: window manager configured in python
 author: Andrija Jovnaovic
 date: 2020-04-26
 slug: qtile-intro
