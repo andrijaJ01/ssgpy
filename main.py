@@ -23,13 +23,18 @@ home_template = env.get_template('index.html')
 post_template = env.get_template('post.html')
 about_template = env.get_template('about.html')
 contact_template = env.get_template('contact.html')
+no_template = env.get_template('404.html')
+success_template = env.get_template('thank-you.html')
+newpost_template = env.get_template('new.html')
 
 
 posts_metadata = [POSTS[post].metadata for post in POSTS]
 home_html = home_template.render(posts=posts_metadata)
 about_html = about_template.render()
 contact_html = contact_template.render()
-
+no_html = no_template.render()
+success_html = success_template.render()
+newpost_html=newpost_template.render()
 
 with open('output/index.html', 'w') as file:
     file.write(home_html)
@@ -39,6 +44,15 @@ with open('output/about.html', 'w') as file:
 
 with open('output/contact.html', 'w') as file:
     file.write(contact_html)
+
+with open('output/404.html', 'w') as file:
+    file.write(no_html)
+
+with open('output/success.html', 'w') as file:
+    file.write(success_html)
+
+with open('output/newpost.html', 'w') as file:
+    file.write(newpost_html)
 
 
 for post in POSTS:

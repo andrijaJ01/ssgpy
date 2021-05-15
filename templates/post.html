@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {%block content%}
+<!--
 {% if post.img %}
-<header class="masthead" style="background-image: url(&quot;{{post.img}}&quot;);width: 100%;height: 100vh;">
+<header class="masthead" style="background-image: url(&quot;{{post.img}}&quot;);">
 {% else %}
-<header class="masthead" style="background-image: url(&quot;assets/img/0088.jpg&quot;);width: 100%;height: 100vh;">
+<header class="masthead" style="background-image: url(&quot;assets/img/0088.jpg&quot;);">
 {% endif %}   
 <div class="overlay"><a href="http://github.com/fer"></a></div>
 <div class="container">
@@ -23,9 +24,31 @@
   </div>
 </div>
 </header>
-<article>
+-->
+
+<header class="masthead" style="background-image: url(&quot;assets/img/0010.jpg&quot;);">
+  <div class="overlay"></div>
   <div class="container">
     <div class="row">
+      <div class="col-md-10 col-lg-8 mx-auto">
+      <div class="post-heading my-5" >
+        <h1>{{post.title}}</h1>
+        <h2 class="subheading">{{post.subtitle}}</h2>
+	<span class="meta" style="font-family: Alike, serif;filter: brightness(124%) contrast(200%);font-size: 20px;">
+	  Posted by&nbsp;
+	  <a href="about.html">{{post.author}}</a>
+	  &nbsp;on {{post.date}}
+	</span>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container">
+    <div id='content' class="row">
       <div class="col-md-10 col-lg-8 mx-auto">
 	{{ post.content }}
       </div>
