@@ -1,8 +1,8 @@
 ---
 title: Learn C - Introduction
-subtitle: collection of books, videos, courses...
-summary: collection of books, videos, courses...
-slug: c-learning-resources
+subtitle: Begginers C tutorial
+summary: Begginers C tutorial
+slug: c-tutorials
 img: assets/img/0088.jpg
 author: Andrija Jovnovic
 date: 2020-05-15
@@ -13,7 +13,7 @@ This will be **C programming language** tutorial collention which will explain C
 
 ## Topics that I will go through 
 
-- [Basics C Programs](### C programming basics)
+- [Basics of C and setting up enviroment](c-part-one.html)
 
 - C Functions
 
@@ -29,16 +29,16 @@ This will be **C programming language** tutorial collention which will explain C
 
 - C Miscellaneous etc.
 
-### C programming basics
 
-C programming is an imperative procedural language. It was designed to compiled using a relatively straightforward compiler and it also provides the access to memory to provide language constructs to follow the machine instructions.
+## Books
 
-In this section, you will learn how to start with c programming and also I will explain this by using a simple and easy example program which prints the “Hello World”. Apart from this, you will also learn the below things:
+Below is the list of recommended c programming books for the beginners.
 
-- Basic commands of c programming.
+> [Let Us C By Yashavant Kanetkar](https://www.pdfdrive.com/let-us-c-by-yashwant-e200713283.html)
 
-- How to write a C program.
+> [Learn to Program with C: Learn to Program using the Popular C Programming Language By Noel Kalicharan](https://www.pdfdrive.com/learn-to-program-with-c-learn-to-program-using-the-popular-c-programming-language-e166650744.html)
 
-- A simple C program with an output.
+> [C Programming :: The Ultimate Way to Learn The Fundamentals of The C Language By Harry. H. Chaudhary](https://www.pdfdrive.com/c-programming-the-ultimate-way-to-learn-the-fundamentals-of-the-c-language-e187584209.html)
 
-- How to compile and execute a C program
+
+

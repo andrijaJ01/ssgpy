@@ -18,6 +18,10 @@ POSTS = {
     post: POSTS[post] for post in sorted(POSTS, key=lambda post: datetime.strptime(POSTS[post].metadata['date'], '%Y-%m-%d'), reverse=True)
 }
 
+
+##
+##TEMPLATES
+##
 env = Environment(loader=PackageLoader('main', 'templates'))
 home_template = env.get_template('index.html')
 post_template = env.get_template('post.html')
@@ -27,7 +31,9 @@ no_template = env.get_template('404.html')
 success_template = env.get_template('thank-you.html')
 newpost_template = env.get_template('new.html')
 
-
+##
+##HTML
+##
 posts_metadata = [POSTS[post].metadata for post in POSTS]
 home_html = home_template.render(posts=posts_metadata)
 about_html = about_template.render()
@@ -35,6 +41,11 @@ contact_html = contact_template.render()
 no_html = no_template.render()
 success_html = success_template.render()
 newpost_html=newpost_template.render()
+
+
+##
+##WRITING
+##
 
 with open('output/index.html', 'w') as file:
     file.write(home_html)
